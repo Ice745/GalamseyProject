@@ -1,3 +1,5 @@
+package GalamseyProject;
+
 import java.util.Calendar;
 import java.util.Scanner;
 
@@ -28,7 +30,7 @@ public class Galamsey {
      * @param ColorNumber the colour value assigned to the vegetation
      * @param latitude the latitude of the location
      * @param longitude the longitude of the location
-     * @param EventYear the year the event of Galamsey happened
+     * @param EventYear the year the event of GalamseyProject.Galamsey happened
      */
 
     public  Galamsey(String VegeColour, int ColorNumber, double latitude, double longitude, String EventYear){
@@ -79,6 +81,8 @@ public class Galamsey {
         return this.PosLongitude;
     }
 
-
-
+//    @Override
+//    public boolean equals(Object obj) {
+//        return super.equals(obj);
+//    }
 }
