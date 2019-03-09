@@ -103,18 +103,18 @@ public class Observatory {
         return super.toString();
     }
 
-    public static void main(String args[]){
-        Observatory thing = new Observatory();
-        Galamsey gal1 = new Galamsey();
-        gal1.setColourValue(2);
-        gal1.setVegetationColour("Yellow");
-        gal1.setYearOfEvent("2010");
-        gal1.setPosLongitude(2.03939);
-        gal1.setPosLatitude(-3.2342);
-
-        thing.setObservatoryGalamseyRecords(gal1);
-        System.out.println(thing.getObservatoryGalamseyRecords());
-
-    }
+//    public static void main(String args[]){
+//        Observatory thing = new Observatory();
+//        Galamsey gal1 = new Galamsey();
+//        gal1.setColourValue(2);
+//        gal1.setVegetationColour("Yellow");
+//        gal1.setYearOfEvent("2010");
+//        gal1.setPosLongitude(2.03939);
+//        gal1.setPosLatitude(-3.2342);
+//
+//        thing.setObservatoryGalamseyRecords(gal1);
+//        System.out.println(thing.getObservatoryGalamseyRecords());
+//
+//    }
 
 }
