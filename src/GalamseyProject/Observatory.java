@@ -6,7 +6,9 @@ import java.util.Iterator;
 public class Observatory {
 
 
-    //Member Variables
+    /**
+     * Instance variables
+     */
     private String ObsvName;
     private String ObsvCountry;
     private String ObsvYear;
@@ -14,12 +16,22 @@ public class Observatory {
     private ArrayList<Galamsey> ObsvGalamsey = new ArrayList();
 
 
-    //Constructor
+    /**
+     * Class constructor
+     */
 
     public Observatory() {
     }
 
-    //Overloaded constructor
+    /**
+     * Overloaded constructor
+     *
+     * @param name
+     * @param country
+     * @param year
+     * @param area
+     * @param galamseyRecord
+     */
 
     public Observatory(String name, String country, String year, double area, ArrayList galamseyRecord) {
         this.ObsvName = name;
@@ -30,7 +42,11 @@ public class Observatory {
     }
 
 
-    //Mutator methods
+    /**
+     * Mutatotr methods
+     *
+     * @param Name
+     */
     public void setObservatoryName(String Name) {
         this.ObsvName = Name;
     }
@@ -53,6 +69,7 @@ public class Observatory {
 
     /**
      * Returns the list of galamsey events recorded
+     *
      * @return
      */
     public ArrayList<Galamsey> getObservatoryGalamseyRecords() {
@@ -61,6 +78,7 @@ public class Observatory {
 
     /**
      * Accessor methods
+     *
      * @return
      */
     public double getObservatoryArea() {
@@ -79,9 +97,20 @@ public class Observatory {
         return this.ObsvCountry;
     }
 
+    /**
+     * Returns the object properties as a string
+     *
+     * @return
+     */
+    public String toString() {
+        return "Observatory name: " + getObservatoryName() + "\nObservatory country: " + getObservatoryCountry() + "\nObservatory year: " + getObservatoryYear() + "\nObservatory Area: " + getObservatoryArea();
+
+
+    }
 
     /**
      * Returns the largest color value ever recorded by the observatory
+     *
      * @return
      */
 
@@ -98,6 +127,7 @@ public class Observatory {
 
     /**
      * Returns the average color value recorded by the observatory
+     *
      * @return
      */
 
@@ -117,6 +147,7 @@ public class Observatory {
     /**
      * Returns a list of all galamsey instances recorded at the observatory
      * with a color value greater than a specified number
+     *
      * @param value
      * @return
      */
@@ -131,6 +162,9 @@ public class Observatory {
             }
         }
         return newList;
+
+
     }
 
 }
+
