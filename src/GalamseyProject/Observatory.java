@@ -36,7 +36,7 @@ public class Observatory {
         this.ObsvYear = Year;
     }
 
-    public void setObservatoryGalamseyRecords(Galamsey event) {
+    public void setObservatryGalamseyRecords(Galamsey event) {
         this.ObsvGalamsey.add(event);
     }
 

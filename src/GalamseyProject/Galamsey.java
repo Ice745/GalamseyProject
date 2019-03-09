@@ -41,6 +41,11 @@ public class Galamsey {
         this.YearOfEvent = EventYear;
     }
 
+
+    /**
+     * Mutator methods
+     * @param colour
+     */
     public void setVegetationColour(String colour){
         this.VegetationColour = colour;
     }
@@ -61,6 +66,11 @@ public class Galamsey {
         this.PosLongitude = longitude;
     }
 
+
+    /**
+     * Accessor Methods
+     * @return
+     */
     public String getVegetationColour(){
         return this.VegetationColour;
     }
@@ -80,6 +90,8 @@ public class Galamsey {
     public double getPosLongitude(){
         return this.PosLongitude;
     }
+
+
 
 //    @Override
 //    public boolean equals(Object obj) {
