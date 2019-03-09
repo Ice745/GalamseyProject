@@ -44,7 +44,7 @@ public class Galamsey {
 
     /**
      * Mutator methods
-     * @param colour
+     *
      */
     public void setVegetationColour(String colour){
         this.VegetationColour = colour;

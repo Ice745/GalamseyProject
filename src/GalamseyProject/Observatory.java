@@ -5,14 +5,21 @@ import java.util.Iterator;
 
 public class Observatory {
 
+
+    //Member Variables
     private String ObsvName;
     private String ObsvCountry;
     private String ObsvYear;
     private double ObsvArea;
     private ArrayList<Galamsey> ObsvGalamsey = new ArrayList();
 
+
+    //Constructor
+
     public Observatory() {
     }
+
+    //Overloaded constructor
 
     public Observatory(String name, String country, String year, double area, ArrayList galamseyRecord) {
         this.ObsvName = name;
@@ -22,6 +29,8 @@ public class Observatory {
         this.ObsvGalamsey = galamseyRecord;
     }
 
+
+    //Mutator methods
     public void setObservatoryName(String Name) {
         this.ObsvName = Name;
     }
@@ -42,10 +51,18 @@ public class Observatory {
         this.ObsvGalamsey.add(obj);
     }
 
+    /**
+     * Returns the list of galamsey events recorded
+     * @return
+     */
     public ArrayList<Galamsey> getObservatoryGalamseyRecords() {
         return this.ObsvGalamsey;
     }
 
+    /**
+     * Accessor methods
+     * @return
+     */
     public double getObservatoryArea() {
         return this.ObsvArea;
     }
@@ -62,6 +79,12 @@ public class Observatory {
         return this.ObsvCountry;
     }
 
+
+    /**
+     * Returns the largest color value ever recorded by the observatory
+     * @return
+     */
+
     public int getMaxColorValue() {
         Iterator<Galamsey> iter = getObservatoryGalamseyRecords().iterator();
         int max = 0;
@@ -72,6 +95,11 @@ public class Observatory {
         }
         return max;
     }
+
+    /**
+     * Returns the average color value recorded by the observatory
+     * @return
+     */
 
     public int getAverageColorValue() {
         Iterator<Galamsey> iter = getObservatoryGalamseyRecords().iterator();
@@ -85,6 +113,13 @@ public class Observatory {
         return average;
     }
 
+
+    /**
+     * Returns a list of all galamsey instances recorded at the observatory
+     * with a color value greater than a specified number
+     * @param value
+     * @return
+     */
     public ArrayList<Galamsey> SpecificRecords(int value) {
         Iterator<Galamsey> iter = getObservatoryGalamseyRecords().iterator();
         int i = 0;
