@@ -1,6 +1,7 @@
 package GalamseyProject;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Observatory {
 
@@ -8,11 +9,12 @@ public class Observatory {
     private String ObsvCountry;
     private String ObsvYear;
     private double ObsvArea;
-    private ArrayList<Galamsey> ObsvGalamsey;
+    private ArrayList<Galamsey> ObsvGalamsey = new ArrayList();
 
-    public Observatory(){}
+    public Observatory() {
+    }
 
-    public Observatory(String name,String country,String year, double area,ArrayList galamseyRecord){
+    public Observatory(String name, String country, String year, double area, ArrayList galamseyRecord) {
         this.ObsvName = name;
         this.ObsvCountry = country;
         this.ObsvYear = year;
@@ -36,8 +38,8 @@ public class Observatory {
         this.ObsvYear = Year;
     }
 
-    public void setObservatoryGalamseyRecords(Galamsey event) {
-        this.ObsvGalamsey.add(event);
+    public void setObservatoryGalamseyRecords(Galamsey obj) {
+        this.ObsvGalamsey.add(obj);
     }
 
     public ArrayList<Galamsey> getObservatoryGalamseyRecords() {
@@ -52,11 +54,48 @@ public class Observatory {
         return ObsvYear;
     }
 
-    public String getObservatoryName(){
+    public String getObservatoryName() {
         return this.ObsvName;
     }
 
     public String getObservatoryCountry() {
         return this.ObsvCountry;
     }
+
+    public int getMaxColorValue() {
+        Iterator<Galamsey> iter = getObservatoryGalamseyRecords().iterator();
+        int max = 0;
+        while (iter.hasNext()) {
+            if (iter.next().getColourValue() > max) {
+                max = iter.next().getColourValue();
+            }
+        }
+        return max;
+    }
+
+    public int getAverageColorValue() {
+        Iterator<Galamsey> iter = getObservatoryGalamseyRecords().iterator();
+        int num = 0;
+        int den = 0;
+        while (iter.hasNext()) {
+            num += iter.next().getColourValue();
+            den += +1;
+        }
+        int average = num / den;
+        return average;
+    }
+
+    public ArrayList<Galamsey> SpecificRecords(int value) {
+        Iterator<Galamsey> iter = getObservatoryGalamseyRecords().iterator();
+        int i = 0;
+        ArrayList<Galamsey> newList = new ArrayList();
+        while (iter.hasNext()) {
+            if (value < iter.next().getColourValue()) {
+                i += 1;
+                newList.add(getObservatoryGalamseyRecords().get(i));
+            }
+        }
+        return newList;
+    }
+
 }
