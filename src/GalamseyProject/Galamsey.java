@@ -1,8 +1,5 @@
 package GalamseyProject;
 
-import java.util.Calendar;
-import java.util.Scanner;
-
 public class Galamsey {
 
     /**
@@ -97,14 +94,7 @@ public class Galamsey {
      */
     public String toString() {
         return "Vegetation Color: " + getVegetationColour() + "\n Year of Event: " + getYearOfEvent() + "\n Color Value: " + getColourValue() + "\n Latitude: " + getPosLatitude() + "\n Longitude " + getPosLongitude();
-
-
     }
-
-
 }
-//    @Override
-//    public boolean equals(Object obj) {
-//        return super.equals(obj);
-//    }
+
 
