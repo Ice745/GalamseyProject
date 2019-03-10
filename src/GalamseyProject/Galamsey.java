@@ -68,7 +68,7 @@ public class Galamsey {
     /**
      * Accessor Methods
      *
-     *
+     * @return
      */
     public String getVegetationColour() {
         return this.VegetationColour;
