@@ -10,9 +10,8 @@ public class Galamsey {
      * @author Benjamin Barnor
      * @author Otito
      * @author Micheal
-     *
+     * <p>
      * Version 1.0.0
-     *
      */
 //Member Variables
     private String VegetationColour;
@@ -22,18 +21,18 @@ public class Galamsey {
     private double PosLongitude;
 
 
-    public Galamsey(){}
+    public Galamsey() {
+    }
 
     /**
-     *
-     * @param VegeColour the colour of the vegetation
+     * @param VegeColour  the colour of the vegetation
      * @param ColorNumber the colour value assigned to the vegetation
-     * @param latitude the latitude of the location
-     * @param longitude the longitude of the location
-     * @param EventYear the year the event of GalamseyProject.Galamsey happened
+     * @param latitude    the latitude of the location
+     * @param longitude   the longitude of the location
+     * @param EventYear   the year the event of GalamseyProject.Galamsey happened
      */
 
-    public  Galamsey(String VegeColour, int ColorNumber, double latitude, double longitude, String EventYear){
+    public Galamsey(String VegeColour, int ColorNumber, double latitude, double longitude, String EventYear) {
         this.VegetationColour = VegeColour;
         this.ColourValue = ColorNumber;
         this.PosLatitude = latitude;
@@ -41,48 +40,71 @@ public class Galamsey {
         this.YearOfEvent = EventYear;
     }
 
-    public void setVegetationColour(String colour){
+
+    /**
+     * Mutator methods
+     */
+    public void setVegetationColour(String colour) {
         this.VegetationColour = colour;
     }
 
-    public void setYearOfEvent(String year){
+    public void setYearOfEvent(String year) {
         this.YearOfEvent = year;
     }
 
-    public void setColourValue(int number){
+    public void setColourValue(int number) {
         this.ColourValue = number;
     }
 
-    public void setPosLatitude(double latitude){
-        this.PosLatitude=latitude;
+    public void setPosLatitude(double latitude) {
+        this.PosLatitude = latitude;
     }
 
-    public void setPosLongitude(double longitude){
+    public void setPosLongitude(double longitude) {
         this.PosLongitude = longitude;
     }
 
-    public String getVegetationColour(){
+
+    /**
+     * Accessor Methods
+     *
+     *
+     */
+    public String getVegetationColour() {
         return this.VegetationColour;
     }
 
-    public String getYearOfEvent(){
+    public String getYearOfEvent() {
         return this.YearOfEvent;
     }
 
-    public int getColourValue(){
+    public int getColourValue() {
         return this.ColourValue;
     }
 
-    public double getPosLatitude(){
+    public double getPosLatitude() {
         return this.PosLatitude;
     }
 
-    public double getPosLongitude(){
+    public double getPosLongitude() {
         return this.PosLongitude;
     }
 
-    @Override
+    /**
+     * Returns the class properties as a string
+     *
+     * @return
+     */
     public String toString() {
-        return super.toString();
+        return "Vegetation Color: " + getVegetationColour() + "\n Year of Event: " + getYearOfEvent() + "\n Color Value: " + getColourValue() + "\n Latitude: " + getPosLatitude() + "\n Longitude " + getPosLongitude();
+
+
     }
+
+
 }
+//    @Override
+//    public boolean equals(Object obj) {
+//        return super.equals(obj);
+//    }
+
