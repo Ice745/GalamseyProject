@@ -103,7 +103,7 @@ public class Observatory {
      * @return
      */
     public String toString() {
-        return "Observatory name: " + getObservatoryName() + "\nObservatory country: " + getObservatoryCountry() + "\nObservatory year: " + getObservatoryYear() + "\nObservatory Area: " + getObservatoryArea();
+        return "\nObservatory name: " + getObservatoryName() + "\nObservatory country: " + getObservatoryCountry() + "\nObservatory year: " + getObservatoryYear() + "\nObservatory Area: " + getObservatoryArea() + "\n";
     }
 
     /**
@@ -149,17 +149,17 @@ public class Observatory {
      * @param value
      * @return
      */
-    public ArrayList<Galamsey> SpecificRecords(int value) {
-        Iterator<Galamsey> iter = getObservatoryGalamseyRecords().iterator();
-        int i = 0;
-        ArrayList<Galamsey> newList = new ArrayList();
-        while (iter.hasNext()) {
-            if (value < iter.next().getColourValue()) {
-                i += 1;
-                newList.add(getObservatoryGalamseyRecords().get(i));
+
+    public ArrayList<Galamsey> SpecificRecords (int value){
+        ArrayList<Galamsey> newlist = new ArrayList();
+        int x = getObservatoryGalamseyRecords().size();
+        for (int i=0; i < x; i++){
+            if (value < getObservatoryGalamseyRecords().get(i).getColourValue()){
+                newlist.add(getObservatoryGalamseyRecords().get(i));
             }
         }
-        return newList;
+        return newlist;
     }
+
 }
 

@@ -93,7 +93,7 @@ public class Galamsey {
      * @return
      */
     public String toString() {
-        return "Vegetation Color: " + getVegetationColour() + "\n Year of Event: " + getYearOfEvent() + "\n Color Value: " + getColourValue() + "\n Latitude: " + getPosLatitude() + "\n Longitude " + getPosLongitude();
+        return "\nVegetation Color: " + getVegetationColour() + "\n Year of Event: " + getYearOfEvent() + "\n Color Value: " + getColourValue() + "\n Latitude: " + getPosLatitude() + "\n Longitude " + getPosLongitude()+"\n";
     }
 }
 
