@@ -9,7 +9,6 @@ public class Monitoring {
     public Monitoring() {
     }
 
-    ;
 
     public Monitoring(ArrayList observeList) {
         this.ObservatoryList = observeList;
