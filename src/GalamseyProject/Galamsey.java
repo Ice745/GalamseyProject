@@ -30,6 +30,8 @@ public class Galamsey {
      */
 
     public Galamsey(String VegeColour, int ColorNumber, double latitude, double longitude, String EventYear) {
+        if(ColorNumber <0 || ColorNumber > 3 ){ throw new IllegalArgumentException ("Please enter a number between 0 and 3")};
+
         this.VegetationColour = VegeColour;
         this.ColourValue = ColorNumber;
         this.PosLatitude = latitude;

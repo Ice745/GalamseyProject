@@ -166,7 +166,7 @@ public class Observatory {
 
 
     /**
-     * Returns a list of all galamsey instances recorded at the observatory
+     * Returns a list of all galamsey i x908    nstances recorded at the observatory
      * with a color value greater than a specified number
      * @param value
      * @return
