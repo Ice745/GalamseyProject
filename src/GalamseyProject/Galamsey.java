@@ -7,7 +7,7 @@ public class Galamsey {
      * @author Benjamin Barnor
      * @author Otito
      * @author Micheal
-     * <p>
+     *
      * Version 1.0.0
      */
 //Member Variables
@@ -26,7 +26,7 @@ public class Galamsey {
      * @param ColorNumber the colour value assigned to the vegetation
      * @param latitude    the latitude of the location
      * @param longitude   the longitude of the location
-     * @param EventYear   the year the event of GalamseyProject.Galamsey happened
+     * @param EventYear   the year the event of Galamsey happened
      */
 
     public Galamsey(String VegeColour, int ColorNumber, double latitude, double longitude, String EventYear) {

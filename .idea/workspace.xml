@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="564d67fa-58f9-4e84-a5d1-c96f4d135504" name="Default Changelist" comment="Added comments and toString methods for both Galamsey and observatory classes">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GalamseyProject/GalamseyProject/Galamsey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GalamseyProject/GalamseyProject/Monitoring.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GalamseyProject/GalamseyProject/Observatory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GalamseyProject/Galamsey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GalamseyProject/Galamsey.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,31 +34,37 @@
     <session id="1003480039">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1340" />
+          <entry key="dummy" value="18" />
+          <entry key="java" value="1618" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1340" />
+          <entry key="JAVA" value="1618" />
+          <entry key="PLAIN_TEXT" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="2" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
-          <entry key="java" value="2" />
+          <entry key="java" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="2" />
+          <entry key="JAVA" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -66,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GalamseyProject/Galamsey.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="95" column="222" selection-start-line="95" selection-start-column="222" selection-end-line="95" selection-end-column="222" />
+            <state relative-caret-position="153">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -75,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GalamseyProject/Observatory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-693">
-              <caret line="105" column="171" lean-forward="true" selection-start-line="105" selection-start-column="171" selection-end-line="105" selection-end-column="171" />
+            <state relative-caret-position="1428">
+              <caret line="105" column="143" selection-start-line="105" selection-start-column="143" selection-end-line="105" selection-end-column="143" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#974#975#0" expanded="true" />
@@ -104,15 +115,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GalamseyProject/Monitoring.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="605">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="17">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#264#265#0" expanded="true" />
-                <element signature="e#314#315#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/GalamseyProject/MonitoringGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="e#412#413#0" expanded="true" />
+                <element signature="e#444#445#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -141,9 +163,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/Galamsey.java" />
         <option value="$PROJECT_DIR$/src/Observatory.java" />
-        <option value="$PROJECT_DIR$/src/GalamseyProject/Galamsey.java" />
         <option value="$PROJECT_DIR$/src/GalamseyProject/Observatory.java" />
         <option value="$PROJECT_DIR$/src/GalamseyProject/Monitoring.java" />
+        <option value="$PROJECT_DIR$/src/GalamseyProject/Galamsey.java" />
+        <option value="$PROJECT_DIR$/src/GalamseyProject/GalamseyGUI.java" />
+        <option value="$PROJECT_DIR$/src/GalamseyProject/MonitoringGUI.java" />
       </list>
     </option>
   </component>
@@ -164,7 +188,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -187,13 +211,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552298040260" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552563698291" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ICP/mysql-connector-java-5.1.36/mysql-connector-java-5.1.36" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -213,7 +238,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.MonitoringGUI">
     <configuration name="GalamseyProject" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="GalamseyProject.Monitoring" />
       <module name="GalamseyProject" />
@@ -227,6 +252,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MonitoringGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GalamseyProject.MonitoringGUI" />
+      <module name="GalamseyProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GalamseyProject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.GalamseyProject" />
+      <item itemvalue="Application.MonitoringGUI" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MonitoringGUI" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -243,7 +290,11 @@
       <workItem from="1552000720986" duration="79000" />
       <workItem from="1552136244970" duration="9003000" />
       <workItem from="1552183269661" duration="10363000" />
-      <workItem from="1552290414898" duration="3793000" />
+      <workItem from="1552290414898" duration="5270000" />
+      <workItem from="1552306929713" duration="28000" />
+      <workItem from="1552336605610" duration="826000" />
+      <workItem from="1552555977147" duration="547000" />
+      <workItem from="1552556977027" duration="2180000" />
     </task>
     <task id="LOCAL-00001" summary="Added comments">
       <created>1552173635374</created>
@@ -263,12 +314,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32802000" />
+    <option name="totallyTimeSpent" value="37860000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.16163649" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.16968478" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -277,13 +329,13 @@
       <window_info id="Favorites" order="6" sideWeight="0.5021097" weight="0.15962441" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32904148" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.36402267" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.36402267" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50033534" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49966466" weight="0.3286119" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
@@ -348,32 +400,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
           <caret line="244" column="18" selection-start-line="244" selection-start-column="18" selection-end-line="244" selection-end-column="18" />
-          <folding>
-            <element signature="e#10225#10226#0" expanded="true" />
-            <element signature="e#10308#10309#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/GalamseyProject/GalamseyProject/Observatory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1271" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/GalamseyProject/GalamseyProject/Monitoring.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/GalamseyProject/GalamseyProject/Observatory.class" />
+    <entry file="file://$PROJECT_DIR$/out/production/GalamseyProject/GalamseyProject/Monitoring.class" />
     <entry file="file://$PROJECT_DIR$/src/GalamseyProject/Galamsey.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="95" column="222" selection-start-line="95" selection-start-column="222" selection-end-line="95" selection-end-column="222" />
+        <state relative-caret-position="153">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GalamseyProject/Observatory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-693">
-          <caret line="105" column="171" lean-forward="true" selection-start-line="105" selection-start-column="171" selection-end-line="105" selection-end-column="171" />
+        <state relative-caret-position="1428">
+          <caret line="105" column="143" selection-start-line="105" selection-start-column="143" selection-end-line="105" selection-end-column="143" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#974#975#0" expanded="true" />
@@ -400,14 +442,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/GalamseyProject/GUi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GalamseyProject/Monitoring.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="17">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GalamseyProject/MonitoringGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
           </folding>
         </state>
       </provider>
