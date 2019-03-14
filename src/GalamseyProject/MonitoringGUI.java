@@ -16,7 +16,7 @@ public class MonitoringGUI {
         frame.add(button);
 
         frame.getJMenuBar();
-        frame.setSize(500,500);
+        frame.setSize(1280,720);
         frame.setLayout(null);
         frame.setVisible(true);
     }
