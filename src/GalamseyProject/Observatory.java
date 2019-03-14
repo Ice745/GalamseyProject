@@ -25,12 +25,11 @@ public class Observatory {
 
     /**
      * Overloaded constructor
-     *
-     * @param name
-     * @param country
-     * @param year
-     * @param area
-     * @param galamseyRecord
+     * @param name the name of the observatory
+     * @param country the name of the country the observatory is situated
+     * @param year the year the galamsey observations started
+     * @param area area covered by the observatory in square kilometres
+     * @param galamseyRecord list of galamsey events recorded
      */
 
     public Observatory(String name, String country, String year, double area, ArrayList galamseyRecord) {
@@ -43,25 +42,43 @@ public class Observatory {
 
 
     /**
-     * Mutatotr methods
-     *
-     * @param Name
+     * Changes the name of the observatory
+     * @param Name new name of the observatory
      */
     public void setObservatoryName(String Name) {
         this.ObsvName = Name;
     }
 
+    /**
+     * Changes the name of the country the observatory is located
+     * @param Country Name of the new country
+     */
     public void setObservatoryCountry(String Country) {
         this.ObsvCountry = Country;
     }
+
+    /**
+     * Assigns a new value to the area of the observatory
+     * @param Area New area of the observatory
+     */
 
     public void setObservatoryArea(double Area) {
         this.ObsvArea = Area;
     }
 
+    /**
+     * Assigns a new year to the observatory
+     * @param Year New year which galamsey operations started
+     */
+
     public void setObservatoryYear(String Year) {
         this.ObsvYear = Year;
     }
+
+    /**
+     * Adds a new Galamsey event to the list of events recorded at the observatory
+     * @param obj New galamsey occurence
+     */
 
     public void setObservatoryGalamseyRecords(Galamsey obj) {
         this.ObsvGalamsey.add(obj);
@@ -69,26 +86,34 @@ public class Observatory {
 
     /**
      * Returns the list of galamsey events recorded
-     *
-     * @return
+     * @returns an arraylist of the galamsey objects
      */
     public ArrayList<Galamsey> getObservatoryGalamseyRecords() {
         return this.ObsvGalamsey;
     }
 
     /**
-     * Accessor methods
-     *
-     * @return
+     *Accessor method for the observatory area
+     * @return returns observatory area
      */
+
     public double getObservatoryArea() {
         return this.ObsvArea;
     }
+
+    /**
+     * Accessor method for the observatory year
+     * @return the year the galamsey activities started
+     */
 
     public String getObservatoryYear() {
         return ObsvYear;
     }
 
+    /**
+     * Accessor method for the observatory name
+     * @return returns the name of the observatory
+     */
     public String getObservatoryName() {
         return this.ObsvName;
     }
@@ -108,7 +133,6 @@ public class Observatory {
 
     /**
      * Returns the largest color value ever recorded by the observatory
-     *
      * @return
      */
 
@@ -124,9 +148,8 @@ public class Observatory {
     }
 
     /**
-     * Returns the average color value recorded by the observatory
      *
-     * @return
+     * @return Returns the average color value recorded by the observatory
      */
 
     public int getAverageColorValue() {
@@ -143,9 +166,8 @@ public class Observatory {
 
 
     /**
-     * Returns a list of all galamsey instances recorded at the observatory
+     * Returns a list of all galamsey i x908    nstances recorded at the observatory
      * with a color value greater than a specified number
-     *
      * @param value
      * @return
      */
