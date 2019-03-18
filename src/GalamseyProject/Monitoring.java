@@ -33,6 +33,17 @@ public class Monitoring {
         return maxAvg;
     }
 
+    public ArrayList<Galamsey> getMaxAvgGalamsey() {
+        int avg = MaxAverageCValue();
+        ArrayList<Galamsey> galList = new ArrayList<>();
+        for (int i = 0; i <getObservatoryList().size();i++ ){
+            if(getObservatoryList().get(i).getAverageColorValue() == avg){
+                galList.addAll(getObservatoryList().get(i).getAverageObsGalamsey());
+            }
+        }
+        return galList;
+    }
+
     public int MaxCValue() {
         Iterator<Observatory> iter = getObservatoryList().iterator();
         int max = 0;
@@ -44,6 +55,17 @@ public class Monitoring {
         return max;
     }
 
+    public ArrayList<Galamsey> getMaxMonGalamsey() {
+        int max = MaxCValue();
+        ArrayList<Galamsey> galList = new ArrayList<>();
+        for (int i = 0; i <getObservatoryList().size();i++ ){
+            if(getObservatoryList().get(i).getMaxColorValue() == max){
+                galList.addAll(getObservatoryList().get(i).getMaxObsGalamsey());
+            }
+        }
+        return galList;
+    }
+
     public ArrayList<Galamsey> SelectedObservatoryRecords(int colourValue){
         ArrayList<Galamsey> records = new ArrayList();
         int x = getObservatoryList().size();
@@ -52,6 +74,5 @@ public class Monitoring {
         }
         return records;
     }
-
 }
 

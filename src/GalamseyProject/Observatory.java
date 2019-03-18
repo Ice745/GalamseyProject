@@ -147,6 +147,17 @@ public class Observatory {
         return max;
     }
 
+    public ArrayList<Galamsey> getMaxObsGalamsey() {
+        int max = getMaxColorValue();
+        ArrayList<Galamsey> galList = new ArrayList<>();
+        for (int i = 0; i <getObservatoryGalamseyRecords().size();i++ ){
+            if(getObservatoryGalamseyRecords().get(i).getColourValue() == max){
+                galList.add(getObservatoryGalamseyRecords().get(i));
+            }
+        }
+        return galList;
+    }
+
     /**
      *
      * @return Returns the average color value recorded by the observatory
@@ -162,6 +173,17 @@ public class Observatory {
         }
         int average = num / den;
         return average;
+    }
+
+    public ArrayList<Galamsey> getAverageObsGalamsey() {
+        int avg = getAverageColorValue();
+        ArrayList<Galamsey> avgGalList = new ArrayList<>();
+        for (int i = 0; i <getObservatoryGalamseyRecords().size();i++ ){
+            if(getObservatoryGalamseyRecords().get(i).getColourValue() == avg){
+                avgGalList.add(getObservatoryGalamseyRecords().get(i));
+            }
+        }
+        return avgGalList;
     }
 
 
