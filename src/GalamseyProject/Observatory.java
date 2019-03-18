@@ -147,6 +147,11 @@ public class Observatory {
         return max;
     }
 
+    /**
+     *
+     * @return
+     */
+
     public ArrayList<Galamsey> getMaxObsGalamsey() {
         int max = getMaxColorValue();
         ArrayList<Galamsey> galList = new ArrayList<>();
