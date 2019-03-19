@@ -5,29 +5,22 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class MonitoringGUI {
-    private JTextField textField1;
-    private JButton observatoryButton;
+
     private JButton galamseyButton;
-
-    public MonitoringGUI() {
-        textField1.addActionListener(new ActionListener() {
-        });
-        observatoryButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null,"");
-            }
-        });
-    }
+    private JButton observatoryButton;
 
 
-    public static void main (String[] args){
-        JFrame frame = new Jframe("App");
-        frame.setContentPane(new App().panelMain);
-        frame.setDefaultClose Opereation(JFrame.EXIT_ON_CLOSE;
-        frame.pack();
-    }
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
+    public static startuppage startuppage;
+    public static Observatorypage observatorypage;
+//    public static publi
+
+//static instances of all the pages
+
+
+    public static void main (String[] args) {
+
+        startuppage = new startuppage();
+        startuppage.setVisible(true);
     }
 }
+
