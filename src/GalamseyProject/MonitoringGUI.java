@@ -5,31 +5,18 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class MonitoringGUI {
-    private JTextField textField1;
-    private JLabel Home;
-    private JButton observatoryButton;
-    private JButton galamseyMapButton;
+    public static startuppage;
+    public static Observatorypage;
+    public static publi
 
-    public MonitoringGUI() {
-        textField1.addActionListener(new ActionListener() {
-        });
-        observatoryButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null,"")
-
-            }
-        });
-    }
+//static instances of all the pages
 
 
-    public static void main (String[] args){
-        JFrame frame = new Jframe("App");
-        frame.setContentPane(new App().panelMain);
-        frame.setDefaultClose Opereation(JFrame.EXIT_ON_CLOSE;
-        frame.pack();
-    }
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
-    }
 }
+
+    public static void main (String[] args) {
+
+        startuppage = new startuppage();
+
+
+    }
