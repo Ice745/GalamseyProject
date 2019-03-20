@@ -1,37 +1,61 @@
 package GalamseyProject;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class Monitoring {
     private ArrayList<Observatory> ObservatoryList = new ArrayList();
 
+    /**
+     * Constructor
+     */
     public Monitoring() {
     }
 
-
+    /**
+     * Overloaded constructor
+     * @param observeList A list of observatories
+     */
     public Monitoring(ArrayList observeList) {
         this.ObservatoryList = observeList;
     }
+
+    /**
+     * Add observatory to the list
+     * @param observation observatory object
+     */
 
     public void setObservatoryList(Observatory observation) {
         this.ObservatoryList.add(observation);
     }
 
+    /**
+     * Returns the list of Observatories in the Monitoring
+     * @return observatory list
+     */
+
     public ArrayList<Observatory> getObservatoryList() {
         return this.ObservatoryList;
     }
 
+    /**
+     * Calculates the maximum average colour value in monitor
+     * @return maximum average
+     */
+
     public int MaxAverageCValue() {
-        Iterator<Observatory> iter = getObservatoryList().iterator();
         int maxAvg = 0;
-        while (iter.hasNext()) {
-            if (iter.next().getAverageColorValue() > maxAvg) {
-                maxAvg = iter.next().getAverageColorValue();
+        for(int i=0; i<getObservatoryList().size();i++){
+            if(maxAvg < getObservatoryList().get(i).getAverageColorValue()){
+                maxAvg = getObservatoryList().get(i).getAverageColorValue();
             }
         }
         return maxAvg;
     }
+
+    /**
+     * A list of Galamsey objects with the maximum average colour value
+     * @return a list of galamsey objects
+     */
 
     public ArrayList<Galamsey> getMaxAvgGalamsey() {
         int avg = MaxAverageCValue();
@@ -44,16 +68,25 @@ public class Monitoring {
         return galList;
     }
 
+    /**
+     * Calculates the maximum color value in monitor
+     * @return the maximum color value
+     */
+
     public int MaxCValue() {
-        Iterator<Observatory> iter = getObservatoryList().iterator();
         int max = 0;
-        while (iter.hasNext()) {
-            if (iter.next().getMaxColorValue() > max) {
-                max = iter.next().getMaxColorValue();
+        for(int i=0; i<getObservatoryList().size();i++){
+            if(max < getObservatoryList().get(i).getMaxColorValue()){
+                max = getObservatoryList().get(i).getMaxColorValue();
             }
         }
         return max;
     }
+
+    /**
+     * A list of Galamsey objects with the maximum colour value
+     * @return list of Galamsey objects
+     */
 
     public ArrayList<Galamsey> getMaxMonGalamsey() {
         int max = MaxCValue();
@@ -65,6 +98,12 @@ public class Monitoring {
         }
         return galList;
     }
+
+    /**
+     * Provides a list of Galamsey events greater than a specified colour value
+     * @param colourValue color value looking for
+     * @return list of Galamseys greater than specified value
+     */
 
     public ArrayList<Galamsey> SelectedObservatoryRecords(int colourValue){
         ArrayList<Galamsey> records = new ArrayList();

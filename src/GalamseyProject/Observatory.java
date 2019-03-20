@@ -1,10 +1,8 @@
 package GalamseyProject;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class Observatory {
-
 
     /**
      * Instance variables
@@ -86,7 +84,7 @@ public class Observatory {
 
     /**
      * Returns the list of galamsey events recorded
-     * @returns an arraylist of the galamsey objects
+     * @return an arraylist of the galamsey objects
      */
     public ArrayList<Galamsey> getObservatoryGalamseyRecords() {
         return this.ObsvGalamsey;
@@ -118,6 +116,11 @@ public class Observatory {
         return this.ObsvName;
     }
 
+    /**
+     * Accessor method for the observatory country
+     * @return Country of the Observatory
+     */
+
     public String getObservatoryCountry() {
         return this.ObsvCountry;
     }
@@ -125,7 +128,7 @@ public class Observatory {
     /**
      * Returns the object properties as a string
      *
-     * @return
+     * @return contents of the instance
      */
     public String toString() {
         return "\nObservatory name: " + getObservatoryName() + "\nObservatory country: " + getObservatoryCountry() + "\nObservatory year: " + getObservatoryYear() + "\nObservatory Area: " + getObservatoryArea() + "\n";
@@ -133,23 +136,22 @@ public class Observatory {
 
     /**
      * Returns the largest color value ever recorded by the observatory
-     * @return
+     * @return maximum color value
      */
 
     public int getMaxColorValue() {
-        Iterator<Galamsey> iter = getObservatoryGalamseyRecords().iterator();
         int max = 0;
-        while (iter.hasNext()) {
-            if (iter.next().getColourValue() > max) {
-                max = iter.next().getColourValue();
+        for (int i=0; i<getObservatoryGalamseyRecords().size(); i++){
+            if(max < getObservatoryGalamseyRecords().get(i).getColourValue()){
+                max = getObservatoryGalamseyRecords().get(i).getColourValue();
             }
         }
         return max;
     }
 
     /**
-     *
-     * @return
+     * A list of galamsey records equal to the maximum color value
+     * @return maximum galamsey event
      */
 
     public ArrayList<Galamsey> getMaxObsGalamsey() {
@@ -164,21 +166,25 @@ public class Observatory {
     }
 
     /**
-     *
+     * Finds the average color value
      * @return Returns the average color value recorded by the observatory
      */
 
     public int getAverageColorValue() {
-        Iterator<Galamsey> iter = getObservatoryGalamseyRecords().iterator();
         int num = 0;
         int den = 0;
-        while (iter.hasNext()) {
-            num += iter.next().getColourValue();
-            den += +1;
+        for(int i=0; i<getObservatoryGalamseyRecords().size();i++){
+            num += getObservatoryGalamseyRecords().get(i).getColourValue();
+            den += 1;
         }
         int average = num / den;
         return average;
     }
+
+    /**
+     * A list of galamsey events equal to the average color value
+     * @return average galamsey events
+     */
 
     public ArrayList<Galamsey> getAverageObsGalamsey() {
         int avg = getAverageColorValue();
@@ -193,10 +199,10 @@ public class Observatory {
 
 
     /**
-     * Returns a list of all galamsey i x908    nstances recorded at the observatory
+     * Returns a list of all galamsey instances recorded at the observatory
      * with a color value greater than a specified number
-     * @param value
-     * @return
+     * @param value color value
+     * @return galamsey events
      */
 
     public ArrayList<Galamsey> SpecificRecords (int value){

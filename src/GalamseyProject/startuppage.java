@@ -7,14 +7,16 @@ import java.awt.event.ActionListener;
 public class startuppage extends JFrame {
     private JButton galamseyButton;
     private JButton Observatory;
+    private JPanel startpanel;
 
     public startuppage() {
+        add(startpanel);
         Observatory.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                MonitoringGUI.startuppage.setVisible(true);
+                MonitoringGUI.startuppage.dispose();
                 MonitoringGUI.observatorypage = new Observatorypage();
-//                MonitoringGUI.observatorypage.setVisible(true);
+                MonitoringGUI.observatorypage.setVisible(true);
 
             }
         });
